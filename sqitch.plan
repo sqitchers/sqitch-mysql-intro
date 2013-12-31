@@ -2,3 +2,4 @@
 %project=flipr
 %uri=https://github.com/theory/sqitch-mysql-intro/
 
+appuser 2013-12-31T21:04:04Z Marge N. O’Vera <marge@example.com> # Creates a an application user.
