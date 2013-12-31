@@ -11,3 +11,6 @@ change_pass [users appuser] 2013-12-31T21:37:36Z Marge N. O’Vera <marge@exampl
 lists [appuser users] 2013-12-31T21:46:22Z Marge N. O’Vera <marge@example.com> # Adds table for storing lists.
 insert_list [lists appuser] 2013-12-31T21:48:14Z Marge N. O’Vera <marge@example.com> # Creates a function to insert a list.
 delete_list [lists appuser] 2013-12-31T21:49:41Z Marge N. O’Vera <marge@example.com> # Creates a function to insert a list.
+flips [appuser users] 2013-12-31T21:53:03Z Marge N. O’Vera <marge@example.com> # Adds table for storing flips.
+insert_flip [flips appuser] 2013-12-31T21:56:12Z Marge N. O’Vera <marge@example.com> # Creates a function to insert a flip.
+delete_flip [flips appuser] 2013-12-31T21:56:22Z Marge N. O’Vera <marge@example.com> # Creates a function to delete a flip.
