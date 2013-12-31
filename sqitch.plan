@@ -7,3 +7,5 @@ users [appuser] 2013-12-31T21:32:48Z Marge N. O’Vera <marge@example.com> # Cre
 insert_user [users appuser] 2013-12-31T21:37:29Z Marge N. O’Vera <marge@example.com> # Creates a function to insert a user.
 change_pass [users appuser] 2013-12-31T21:37:36Z Marge N. O’Vera <marge@example.com> # Creates a function to change a user password.
 @v1.0.0-dev1 2013-12-31T21:41:08Z Marge N. O’Vera <marge@example.com> # Tag v1.0.0-dev1.
+
+flips [appuser users] 2013-12-31T21:53:03Z Marge N. O’Vera <marge@example.com> # Adds table for storing flips.
