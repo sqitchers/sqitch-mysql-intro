@@ -6,7 +6,6 @@ BEGIN;
 
 DELIMITER //
 
-DROP FUNCTION change_pass;
 CREATE FUNCTION change_pass(
     nickname VARCHAR(512),
     oldpass  VARCHAR(512),
@@ -14,9 +13,9 @@ CREATE FUNCTION change_pass(
 ) RETURNS INTEGER SQL SECURITY DEFINER
 BEGIN
     UPDATE users
-       SET password = ENCRYPT(md5(newpass), md5(FLOOR(RAND() * 0xFFFFFFFF)))
+       SET password = md5(newpass)
      WHERE nickname = nickname
-       AND password = ENCRYPT(md5(oldpass), password);
+       AND password = md5(oldpass);
     RETURN ROW_COUNT();
 END;
 //
