@@ -4,7 +4,7 @@ Sqitch MySQL Intro
 A tutorial repository demonstrating how to manage an
 [mysql](http://mysql.org/) database with [Sqitch](http://sqitch.org/). The
 actual tutorial is
-[`sqitchtutorial-mysql`](https://github.com/theory/sqitch/blob/master/lib/sqitchtutorial-mysql.pod);
+[`sqitchtutorial-mysql`](https://sqitch.org/docs/manual/sqitchtutorial-mysql/);
 this repository is actually the example repository described in the tutorial.
 So you may want to look at the history here. Or clone this repository and run
 `sqitch` against various checkouts or just against the Git history.
