@@ -3,8 +3,8 @@
 BEGIN;
 
 SELECT sqitch.checkit(COUNT(*), 'Procedure "change_pass" does not exist')
-  FROM mysql.proc
- WHERE db = database()
-   AND specific_name = 'change_pass';
+ FROM information_schema.routines
+ WHERE routine_schema = database()
+   AND routine_name = 'change_pass';
 
 ROLLBACK;

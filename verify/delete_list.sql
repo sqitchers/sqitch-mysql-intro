@@ -3,8 +3,8 @@
 BEGIN;
 
 SELECT sqitch.checkit(COUNT(*), 'Procedure "delete_list" does not exist')
-  FROM mysql.proc
- WHERE db = database()
-   AND specific_name = 'delete_list';
+  FROM information_schema.routines
+ WHERE routine_schema = database()
+   AND routine_name = 'delete_list';
 
 ROLLBACK;

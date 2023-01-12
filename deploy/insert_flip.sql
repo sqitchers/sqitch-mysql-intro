@@ -9,7 +9,7 @@ DELIMITER //
 CREATE FUNCTION insert_flip(
     nickname VARCHAR(512),
     body     VARCHAR(180)
-) RETURNS BIGINT SQL SECURITY DEFINER
+) RETURNS BIGINT DETERMINISTIC SQL SECURITY DEFINER
 BEGIN
     INSERT INTO flips (nickname, body, timestamp)
     VALUES (nickname, body, UTC_TIMESTAMP(6));

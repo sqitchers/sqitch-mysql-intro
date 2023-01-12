@@ -10,7 +10,7 @@ CREATE FUNCTION change_pass(
     nickname VARCHAR(512),
     oldpass  VARCHAR(512),
     newpass  VARCHAR(512)
-) RETURNS INTEGER SQL SECURITY DEFINER
+) RETURNS INTEGER DETERMINISTIC SQL SECURITY DEFINER
 BEGIN
     UPDATE users
        SET password = md5(newpass)
